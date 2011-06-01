@@ -1,8 +1,8 @@
 require File.expand_path('../../spec_helper', File.dirname(__FILE__))
 
 describe Xilinx::Provision::Impact do
-  describe 'binary_path' do
-    let(:path) { Xilinx::Provision::Impact.binary_path }
+  describe 'path' do
+    let(:path) { Xilinx::Provision::Impact.path }
     
     it 'is a non-empty string' do
       path.should be_kind_of String
@@ -16,9 +16,9 @@ describe Xilinx::Provision::Impact do
   
   describe 'run' do
     it 'should piece the impact command-line correctly' do
-      Xilinx::Provision::Impact.stub(:binary_path).and_return('/path/to/impact')
+      Xilinx::Provision::Impact.stub(:path).and_return('/path/to/impact')
       Kernel.should_receive(:`).
-             with('/path/to/impact -mode bscan -port auto -batch impact_batch')
+          with '/path/to/impact -mode bscan -port auto -batch impact_batch 2>&1'
       lambda {
         Xilinx::Provision::Impact.run :batch => ['identify'], :mode => :bscan,
             :cable_port => :auto

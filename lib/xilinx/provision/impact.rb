@@ -17,7 +17,10 @@ module Impact
   #
   # Returns the command's output.
   def self.run(options = {})
-    command_line = binary_path
+    unless command_line = path
+      raise "Xilinx ISE not found\nPlease download from #{download_url}"
+    end
+    
     command_line << " -mode #{options[:mode]}" if options[:mode]
     command_line << " -port #{options[:cable_port]}" if options[:cable_port]
     
@@ -28,8 +31,9 @@ module Impact
           File.open('impact_batch', 'wb') do |f|
             f.write options[:batch].map { |line| line + "\n" }.join
           end
-          command_line << " -batch impact_batch"
+          command_line << ' -batch impact_batch'
         end
+        command_line << ' 2>&1'
         output = Kernel.`(command_line)
       end 
     end
@@ -37,17 +41,17 @@ module Impact
   end
   
   # Path to the impact binary.
-  def self.binary_path
-    @binary_path ||= binary_path!
+  def self.path
+    @path ||= path!
   end
   
   # Cached path.
-  @binary_path = nil
+  @path = nil
   
   # Path to the impact binary.
   #
   # This method does not cache its result and is really slow.
-  def self.binary_path!
+  def self.path!
     paths = Dir['/opt/**/impact']
     paths = Dir['/usr/**/impact'] if paths.empty?
     
@@ -63,7 +67,7 @@ module Impact
   
   # The URL printed when no ISE installation is found.
   def self.download_url
-    "http://www.xilinx.com/support/download/index.htm"
+    'http://www.xilinx.com/support/download/index.htm'
   end
 end  # namespace Xilinx::Provision::Impact
 

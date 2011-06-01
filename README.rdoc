@@ -1,10 +1,27 @@
 = xilinx-provision
 
-Description goes here.
+Automates the tasks involved in uploading a bitfile to a Xilinx FPGA board.
 
 == Disclaimer
 
-I am not affiliated in any way with Xilinx, Inc.
+I am not affiliated in any way with Xilinx, Inc. I'm sharing this code so that other researches won't have to perform the steps by hand or rework it.
+
+== Features
+
+The gem automates the following tasks:
+* builds a recent version of the USB cable driver
+* writes udev rules for the USB cable driver
+* writes udev rules for uploading firmware to the cable
+* uploads a bitfile to a FPGA
+
+== Dependencies
+
+Right now, the gem works in Debian-based Linux distributions. It should be easy to extend it to other Linux distributions.
+
+I have no interest in making the gem work on Windows, but I would welcome patches that do so.
+
+The gem assumes Xilinx ISE is installed. Any edition will work, including the WebPACK free edition. Download the software from:
+http://www.xilinx.com/support/download/index.htm
 
 == Contributing to xilinx-provision
  
@@ -18,6 +35,4 @@ I am not affiliated in any way with Xilinx, Inc.
 
 == Copyright
 
-Copyright (c) 2011 Victor Costan. See LICENSE.txt for
-further details.
-
+Copyright (c) 2011 Victor Costan. See LICENSE.txt for further details.
