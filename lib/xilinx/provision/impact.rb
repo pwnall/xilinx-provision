@@ -17,7 +17,8 @@ module Impact
   #
   # Returns the command's output.
   def self.run(options = {})
-    unless command_line = path
+    unless command_line =
+        "LD_PRELOAD=#{Xilinx::Provision::CableDriver.path} " + path
       raise "Xilinx ISE not found\nPlease download from #{download_url}"
     end
     
