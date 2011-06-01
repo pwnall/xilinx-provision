@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "xilinx-provision"
   gem.homepage = "http://github.com/pwnall/xilinx-provision"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "costan@gmail.com"
+  gem.summary = %Q{Deploys bitfiles to Xilinx FPGAs}
+  gem.description = %Q{Wraps the impact CLI tool in the Xilinx ISE}
+  gem.email = "victor@costan.us"
   gem.authors = ["Victor Costan"]
   # dependencies defined in Gemfile
 end
@@ -38,7 +38,7 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 

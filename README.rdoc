@@ -2,6 +2,10 @@
 
 Description goes here.
 
+== Disclaimer
+
+I am not affiliated in any way with Xilinx, Inc.
+
 == Contributing to xilinx-provision
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
