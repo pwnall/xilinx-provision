@@ -25,7 +25,6 @@ module Impact
       'identify',
       "assignFile -position #{devices.length} -file #{bitfile}",
       "program -position #{devices.length}",
-      'cleanCableLock',
       'closeCable'
     ]
     options.merge! :batch => batch
@@ -40,7 +39,7 @@ module Impact
   #
   # Returns the command's output.
   def self.identify_chain(options = {})
-    batch = ['identify', 'cleanCableLock', 'closeCable']
+    batch = ['identify', 'closeCable']
     options = {:mode => :bscan, :cable_port => :auto, :batch => batch}
     parse_identify run(options)
   end
