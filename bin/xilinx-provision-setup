@@ -2,7 +2,8 @@
 require 'rubygems'
 require 'xilinx/provision'
 
-if output = Xilinx::Provision::CableDriver.setup
+if output = Xilinx::Provision::CableDriver.setup ||
+            Xilinx::Provision::CableFirmware.setup
   print output
   exit 1
 else

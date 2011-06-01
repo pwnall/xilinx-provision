@@ -4,7 +4,7 @@ Automates the tasks involved in uploading a bitfile to a Xilinx FPGA board.
 
 == Disclaimer
 
-I am not affiliated in any way with Xilinx, Inc. I'm sharing this code so that other researches won't have to perform the steps by hand or rework it.
+The authors are not affiliated in any way with Xilinx, Inc. We are sharing this code so that other researches won't have to duplicate the effort.
 
 == Features
 
@@ -35,4 +35,4 @@ http://www.xilinx.com/support/download/index.htm
 
 == Copyright
 
-Copyright (c) 2011 Victor Costan. See LICENSE.txt for further details.
+Copyright (c) 2011 Massachusetts Institute of Technology. See LICENSE.txt for further details.

@@ -1,0 +1,3 @@
+# version 0003
+SYSFS{idVendor}=="03fd", SYSFS{idProduct}=="0008", MODE="666"
+BUS=="usb", ACTION=="add", SYSFS{idVendor}=="03fd", SYSFS{idProduct}=="0007", RUN+="/sbin/fxload -v -t fx2 -I /usr/share/xusbdfwu.hex -D $TEMPNODE"

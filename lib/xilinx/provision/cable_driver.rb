@@ -20,9 +20,9 @@ module CableDriver
     elsif output = build(path)
       return "Error while building driver:\n#{output}"
     elsif output = configure_udev
-      return "Error while configuring udev rules\n#{output}"
+      return "Error while configuring cable driver udev rules\n#{output}"
     elsif output = Xilinx::Provision::Udev.reload_rules
-      return "Error while reloading udev rules\n#{output}"
+      return "Error while loading cable driver udev rules\n#{output}"
     end
     nil
   end
@@ -88,7 +88,7 @@ module CableDriver
   def self.git_url
     'git://git.zerfleddert.de/usb-driver'
   end
-end  # namespace Xilinx::Provision::Impact
+end  # namespace Xilinx::Provision::CableDriver
 
 end  # namespace Xilinx::Provision
 
