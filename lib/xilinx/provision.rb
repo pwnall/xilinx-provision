@@ -8,4 +8,4 @@ end  # namespace Xilinx::Provision
 
 end # namespace Xilinx
 
-require 'xilinx/provision/ise_paths.rb'
+require 'xilinx/provision/impact.rb'

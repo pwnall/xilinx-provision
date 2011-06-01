@@ -10,6 +10,7 @@ group :development do
   gem 'rspec', '~> 2.6.0'
   gem 'bundler', '~> 1.0.14'
   gem 'jeweler', '~> 1.6.1'
-  gem 'rcov', '>= 0'
+  gem 'rcov', '>= 0', :platform => :mri
+
   gem 'ether_ping', '~> 0.3.1'
 end
