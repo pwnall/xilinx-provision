@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "xilinx-provision"
-  gem.homepage = "http://github.com/pwnall/xilinx-provision"
+  gem.homepage = "http://github.com/csail/xilinx-provision"
   gem.license = "MIT"
   gem.summary = %Q{Deploys bitfiles to Xilinx FPGAs}
   gem.description = %Q{Wraps the impact CLI tool in the Xilinx ISE}
