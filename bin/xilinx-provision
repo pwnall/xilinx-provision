@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'xilinx/provision'
+
+if ARGV.length != 1
+  puts "Usage: #{$0} path_to_bitfile"
+  exit 1
+end
+
+Xilinx::Provision.fpga ARGV[0]

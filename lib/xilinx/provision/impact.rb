@@ -20,6 +20,7 @@ module Impact
     options[:cable_port] ||= :auto
     devices = identify_chain(options)
     
+    bitfile = File.expand_path bitfile
     batch = [
       'identify',
       "assignFile -position #{devices.length} -file #{bitfile}",
