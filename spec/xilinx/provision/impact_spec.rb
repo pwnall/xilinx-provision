@@ -77,7 +77,7 @@ describe Xilinx::Provision::Impact do
       end
       
       it 'should make the FPGA respond to pings' do
-        client = EtherPing::Client.new ethernet_device, 0x88B5, '112233445566'
+        client = EtherPing::Client.new ethernet_device, 0x88B5, '001122334455'
         client.ping("abcd", 3).should be_kind_of(Numeric)
       end
     end
