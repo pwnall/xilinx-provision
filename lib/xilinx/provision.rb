@@ -3,7 +3,10 @@ module Xilinx
 
 # Documentation here.
 module Provision
-  
+  #
+  # Raises an exception if programming fails, returns the command output on
+  # success.
+
 end  # namespace Xilinx::Provision
 
 end # namespace Xilinx

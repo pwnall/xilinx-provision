@@ -1,0 +1,75 @@
+Release 13.1 - iMPACT O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoInfer            false               
+SvfPlayDisplayComments false               
+AutoDetecting cable. Please wait.
+ Using windrvr6 driver.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/xusbdfwu.hex = 1030.
+File version of /etc/hotplug/usb/xusbdfwu.fw/xusbdfwu.hex = 1030.
+ libusb-driver.so version: 2011-03-25 19:15:17.
+ Cable PID = 0008.
+ Max current requested during enumeration is 150 mA.
+Type = 0x0005.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 2401.
+File version of /opt/Xilinx/13.1/ISE_DS/ISE/data/xusb_xp2.hex = 2401.
+Firmware hex file version = 2401.
+PLD file version = 200Dh.
+ PLD version = 200Dh.
+Type = 0x0005.
+ESN option: 0000149C444901.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vlx110t, Version : 10
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/13.1/ISE_DS/ISE/virtex5/data/xc5vlx110t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx110t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'1': : Manufacturer's ID = Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/13.1/ISE_DS/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID = Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/13.1/ISE_DS/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID = Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/13.1/ISE_DS/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID = Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------

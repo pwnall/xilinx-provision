@@ -5,7 +5,7 @@ describe Xilinx::Provision::CableDriver do
     before do
       # Remove one a package without deps to validate that it reinstalls.
       if File.exist? `which apt-get`.strip
-        `apt-get remove -y fxload`
+        `apt-get remove -y fxload 2>&1`
       end
     end
     
