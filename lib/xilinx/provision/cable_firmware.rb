@@ -48,7 +48,7 @@ module CableFirmware
     old_rules.map do |old_rule|
       rule = old_rule.dup
       # Update old udev syntax.
-      [['TEMPNODE', 'tempnode'], ['SYSFS', 'ATTRS'],
+      [['TEMPNODE', 'tempnode'], ['SYSFS', 'ATTRS'], ['"666"', '"0666"'],
        ['BUS', 'SUBSYSTEMS']].each { |from, to| rule.gsub! from, to }
       
       # Change firmware file references to point inside Xilinx ISE. It's very

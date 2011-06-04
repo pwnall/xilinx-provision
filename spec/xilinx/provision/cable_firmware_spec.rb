@@ -40,7 +40,7 @@ describe Xilinx::Provision::CableFirmware do
       it 'should match the golden output' do
         Xilinx::Provision::CableFirmware.udev_rules.should == [
           '# version 0003',
-          'ATTRS{idVendor}=="03fd", ATTRS{idProduct}=="0008", MODE="666"',
+          'ATTRS{idVendor}=="03fd", ATTRS{idProduct}=="0008", MODE="0666"',
           %Q|SUBSYSTEMS=="usb", ACTION=="add", ATTRS{idVendor}=="03fd", ATTRS{idProduct}=="0007", RUN+="/sbin/fxload -v -t fx2 -I #{File.expand_path('../../../fixtures', __FILE__)}/xusbdfwu.hex -D $tempnode"|
         ]
       end

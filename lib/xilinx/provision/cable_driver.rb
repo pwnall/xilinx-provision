@@ -76,7 +76,7 @@ module CableDriver
   #
   # Returns an array of rules to be written to a udev file.
   def self.udev_rules
-    ['ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="03fd", MODE="666"']
+    ['ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="03fd", MODE="0666"']
   end
   
   # The path to the driver file.
