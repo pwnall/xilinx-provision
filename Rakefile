@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'rubygems'
 require 'bundler'
 begin
@@ -21,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Wraps the impact CLI tool in the Xilinx ISE}
   gem.email = "victor@costan.us"
   gem.authors = ["Victor Costan"]
-  # dependencies defined in Gemfile
+  # Dependencies defined in Gemfile.
 end
 Jeweler::RubygemsDotOrgTasks.new
 
